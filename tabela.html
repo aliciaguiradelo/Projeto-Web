@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fundo-azul{
+            background-color: blue;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        tbody > tr > td{
+            border: 2px solid red;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 450px;
+            margin: auto;
+        }
+        td{
+            border: solid 1px;
+        }
+        tfoot{
+            text-align: center;
+        }
+        .data_centralizada{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr class="fundo-azul">
+                <td>NOME</td>
+                <td>VALOR</td>
+                <td>DATA DO PAGAMENTO</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alicia Guiradelo</td>
+                <td>R$ 122,00</td>
+                <td class="data_centralizada">21/09/2022</td>
+            </tr>
+            <tr>
+                <td>Fulano 1</td>
+                <td>R$ 122,00</td>
+                <td class="data_centralizada">21/09/2022</td>
+            </tr>
+            <tr>
+                <td>Fulano 2</td>
+                <td>R$ 122,00</td>
+                <td class="data_centralizada">21/09/2022</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="fundo-azul">
+                <td colspan="3">xxxxxxxxxxx</td>
+
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
+<!--OBS.1=para o foot centralizar nas três colunas, coloca colspan="3" -->
+<!--OBS.2= thead, tbody e tfooter são apenas semânticos, ou seja, dão significado mas não mudão nada visualmente-->
+<!--Para centralizar o tfooter, abre ele no css e coloca text-align:center-->
