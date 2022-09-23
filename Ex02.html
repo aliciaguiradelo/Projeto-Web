@@ -4,62 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXERCÍCIO 02 - TABELA DE NOTAS</title>
+    <title>EXERCICIO 02 - TABELA ÍCONES CLIMA</title>
+    <link rel="stylesheet" href="css/weather-icons.min.css"/>
     <style>
         table{
-            width: 50%;
-            min-width: 300px;
-            margin: 50px auto auto auto;
-            border-collapse: collapse;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-        }
-        td{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            width: 20%;
+            background-color: a rgb(240,248,255);
             text-align: center;
         }
-        .nomes{
-            text-align: left;
+        thead{
+            background-color: rgb(168, 218, 213);
+            font-weight: bold;
         }
-        .fundo{
-            background-color: rgb(240, 248, 255);
-        }
+        tr{
+            border: 1px solid black;
+            padding: 5px;
 
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td:hover{
+            background-color:rgb(168, 218, 213);
+        }
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <td class="nomes"></td>
-                <td>HTML</td>
-                <td>JAVASCRiPT</td>
-                <td>CSS</td>
+                <td>DIA</td>
+                <td>TEMPO</td>
+                <td>MÍN</td>
+                <td>MÁX</td>
             </tr>
         </thead>
         <tbody>
-            <tr class="fundo">
-                <td class="nomes">STEVEN TYLER</td>
-                <td>5.00</td>
-                <td>7.00</td>
-                <td>4.00</td>
+            <tr>
+                <td>DOMINGO</td>
+                <td><i class="wi wi-day-cloudy"></i></td>
+                <td>11</td>
+                <td>23</td>
             </tr>
             <tr>
-                <td class="nomes">AXL ROSE</td>
-                <td>10.00</td>
-                <td>10.00</td>
-                <td>10.00</td>
-            </tr>
-            <tr class="fundo">
-                <td class="nomes">RENATO RUSSO</td>
-                <td>10.00</td>
-                <td>10.00</td>
-                <td>10.00</td>
+                <td>SEGUNDA</td>
+                <td><i class="wi wi-day-sunny"></i></td>
+                <td>15</td>
+                <td>20</td>
             </tr>
             <tr>
-                <td class="nomes">KURT COBAIN</td>
-                <td>10.00</td>
-                <td>9.00</td>
-                <td>10.00</td>
+                <td>TERÇA</td>
+                <td><i class="wi wi-day-rain"></i></td>
+                <td>16</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>QUARTA</td>
+                <td><i class="wi wi-day-lightning"></i></td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>QUINTA</td>
+                <td><i class="wi wi-day-windy"></i></td>
+                <td>16</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>SEXTA</td>
+                <td><i class="wi wi-cloudy"></i></td>
+                <td>15</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>SÁBADO</td>
+                <td><i class="wi wi-day-cloudy"></i></td>
+                <td>20</td>
+                <td>32</td>
             </tr>
         </tbody>
     </table>
