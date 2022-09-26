@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <style>
+        form{
+            text-align: center;
+            margin: auto;
+            width: 250px;
+            border: 5px  black double ;
+        }
+        #idEnviar{
+            border: 5px  black solid ;
+        }
+        input{
+            background-color: yellow;
+            color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form method="get" action="cadastro.php">
+        <label for="idLogin">LOGIN:</label>
+        <input type="text" id="idLogin" name="idLogin"><br/>
+        <label for="idPassword">SENHA:</label>
+        <input type="password" id="idPassword" name="idPassword"><br/>
+        <label for="idIdade">IDADE:</label>
+        <input type="number" id="idIdade" name="idIdade"><br/>
+        <label for="idSexo">SEXO:</label>
+        <input type="radio" id="idSexoM" name="idSexo">Masculino
+        <input type="radio" id="idSexoN" name="idSexo">Não quero falar
+        <input type="radio" id="idSexoF" name="idSexo">Feminino <br/>
+        <label for="idProgramacao">LINGUAGENS:</label>
+        <input type="checkbox" id="idJavascript" name="idProgramacao">Javascript
+        <input type="checkbox" id="idPython" name="idProgramacao">Python<br/>
+        <input type="submit" value="Enviar" id="idEnviar"><br/>
+    </form>
+    
+</body>
+</html>
+
+<!--<form method="get" action="cadastro.php">
+        LOGIN:<input type="text" id="idLogin" name="idLogin"><br/>
+        SENHA:<input type="password" id="idPassword" name="idPassword"><br/>
+        IDADE:<input type="number" id="idIdade" name="idIdade"><br/>
+        SEXO:
+        <input type="radio" id="idSexoM" name="idSexo">Masculino
+        <input type="radio" id="idSexoF" name="idSexo">Feminino <br/>
+        <input type="submit" value="Enviar" id="idEnviar"><br/>
+    </form>-->
+    <!--O ID NUNCA PODE SER IGUAL! É A IDENTIDADE
+        JÁ O NAME PODE SER IGUAL CASO EU QUEIRA POR VÁRIAS OPÇÕES PARA SELECIONAR. 
+        E QUANDO EU FIZER ISSO, EU NUNCA VOU CONSEGUIR SELECIONAR MAIS DE UMA OPÇÃO-->
+<!--PARA SELECIONAR VÁRIAS OPÇÕES INVÉZ DE USAR "RADIO", EU TENHO QUE USAR CHECKBOX-->
+<!--align-itens: center; NÃO FUNCIONA PARA ALINHAR O FORM NO MEIO DA PÁG.-->
