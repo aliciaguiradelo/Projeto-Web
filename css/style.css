@@ -1,0 +1,39 @@
+div{
+    text-align: center;
+}
+h1{
+    background-color: #ed145b;
+}
+main{
+    display: flex;    
+    margin: auto;
+    
+}
+section{
+    text-align: center;
+    margin: 120px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+}
+thead{
+    background-color: #1e90ff;
+}
+#p{
+    background-color: rgb(189, 185, 185);;
+}
+#s{
+    background-color: rgb(139, 137, 137);;
+}
+form{
+    background-color: rgb(209, 206, 206);
+    padding: 20px;
+}
+
+
+footer{
+    background-color: #ed145b;
+}
