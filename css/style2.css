@@ -1,0 +1,49 @@
+div{
+    text-align: center;
+    width: auto;
+}
+main{
+    display: flex;
+    margin: auto;
+}
+section{
+    flex: 1;
+    margin: 20px;
+    
+}
+header{
+    background-color: #ed145b;
+}
+table{
+    border-collapse: collapse;
+}
+thead{
+    background-color:#1e90ff ;
+}
+.claro{
+    background-color: rgb(189, 185, 185);
+}
+#escuro{
+    background-color: rgb(139, 137, 137);;
+}
+td{
+    padding: 5px;
+}
+form{
+    border: black solid 1px;
+    background-color: rgb(209, 206, 206);
+    width: 200px;
+    padding: 20px;
+    margin: auto;
+}
+
+
+
+
+footer{
+    background-color: #ed145b;
+    height: 30px;
+}
+h6{
+    padding: 5px;
+}
