@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: gray;
+        }
+        article{
+            height: 100vh;
+            
+        }
+        @media screen and (max-width: 480px){
+            .bloco1,
+            .bloco2,
+            .bloco3,
+            .bloco4{
+                width: 100%;
+                /*background-color: red;*/
+                height: auto;
+            }
+        }
+        @media screen and (min-width:481px) and (max-width:768px){
+            .bloco1, .bloco2, .bloco3, .bloco4{
+                box-sizing: border-box;
+                float:left;
+                width: 50%;
+                /*background-color: yellow;*/
+                padding: 5px;
+                height: auto;
+            }
+        }
+        @media screen and (min-width:769px) and (max-width:1279px){
+            .bloco1, .bloco2, .bloco3{
+                float: left;
+                width: 33.33%;
+                /*background-color: green;*/
+                box-sizing: border-box;
+                height: auto;
+            }
+            .bloco4{
+                clear:both;
+                height: auto;
+            }
+        }
+        @media screen and (min-width:1280px){
+            .bloco1, .bloco2 , .bloco3 , .bloco4{
+                box-sizing: border-box;
+                width: 25%;
+                /*background-color: blue;*/
+                float: left;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article class="bloco1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum perspiciatis cum. Incidunt animi porro maxime officiis illo tempore velit ab dolores? Libero eveniet, omnis quisquam id ullam aliquid pariatur consectetur similique veritatis necessitatibus hic optio tempore odit est sapiente atque sequi aperiam eligendi quo asperiores porro obcaecati voluptas. Consequuntur!</article>
+        <article class="bloco2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum perspiciatis cum. Incidunt animi porro maxime officiis illo tempore velit ab dolores? Libero eveniet, omnis quisquam id ullam aliquid pariatur consectetur similique veritatis necessitatibus hic optio tempore odit est sapiente atque sequi aperiam eligendi quo asperiores porro obcaecati voluptas. Consequuntur!</article>
+        <article class="bloco3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum perspiciatis cum. Incidunt animi porro maxime officiis illo tempore velit ab dolores? Libero eveniet, omnis quisquam id ullam aliquid pariatur consectetur similique veritatis necessitatibus hic optio tempore odit est sapiente atque sequi aperiam eligendi quo asperiores porro obcaecati voluptas. Consequuntur!</article>
+        <article class="bloco4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum perspiciatis cum. Incidunt animi porro maxime officiis illo tempore velit ab dolores? Libero eveniet, omnis quisquam id ullam aliquid pariatur consectetur similique veritatis necessitatibus hic optio tempore odit est sapiente atque sequi aperiam eligendi quo asperiores porro obcaecati voluptas. Consequuntur!</article>
+    </section>
+</body>
+</html>

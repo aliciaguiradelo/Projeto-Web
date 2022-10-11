@@ -6,7 +6,7 @@ main{
     display: flex;
     margin: auto;
 }
-section{
+section{ 
     flex: 1;
     margin: 20px;
     
