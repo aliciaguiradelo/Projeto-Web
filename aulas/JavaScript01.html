@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/script01.js"></script>
+    <style>
+        #idResultado{
+            background-color: brown;
+            color: aliceblue;
+        }
+        .button{
+            background-color: blueviolet;
+        }
+
+        
+    </style>
+    <script>
+        
+    </script>
+
+</head>
+
+<body>
+    <label for="txtNumero1">Número</label>
+    <input type="text" id="txtNumero1">
+    <label for="txtNumero2">Número</label>
+    <input type="text" id="txtNumero2">
+    <input type="button" class="button" value="Mostrar o menor" onclick="mostra_menor(
+                                                                        document.getElementById('txtNumero1').value,
+                                                                        document.getElementById('txtNumero2').value);">
+    <hr>    
+    <label for="txtNumero3">Número</label>
+    <input type="text" id="txtNumero3">
+    <label for="txtNumero4">Número</label>
+    <input type="text" id="txtNumero4">
+    <input type="button" class="button" value="Mostrar o menor" onclick="mostra_menor(
+                                                                        document.getElementById('txtNumero3').value,
+                                                                        document.getElementById('txtNumero4').value);">
+    <br/>
+
+    <div id="idResultado"> </div>
+</body>
+
+</html>
