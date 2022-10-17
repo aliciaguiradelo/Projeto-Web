@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="intro.js"></script>
+    <!--Para usar o JavaScript incorporado basta abrir a tag <script> e fazer as edições dentro dela-->
+</head>
+<body>
+    <label for="idNome">NOME: </label>
+    <input type="text" id="idNome"><br/>
+
+    <label for="idIdade">IDADE: </label>
+    <input type="text" id="idIdade"><br/>
+
+    <input type="button" value="Teste" onclick="alert('LIHTUTTY')">
+    <input type="button" value="Ver Nome" onclick="alert(document.getElementById('IdNome').value)"><br/>
+    <input type="button" value="Ver Idade" onclick="alert(document.getElementById('IdIdade').value)"><br/>
+    <input type="button" value="Modificar div" onclick="preencherNome();">
+    <div id="idDiv">TESTE</div>
+</body>
+<script>
+    //preencher o objeto idIdade com o valor 21;
+    document.getElementById('idIdade').value = 21;
+
+    function preencherNome(){
+        let nome = document.getElementById('idNome').value;
+        document.getElementById('idDiv').innerHTML = "<h1>"+Alicia+"<h1>";
+    }
+</script>
+</html>
