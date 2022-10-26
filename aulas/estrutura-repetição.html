@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="exibirValorVetor"></div>
+    <div id="exibirValor"></div>
+</body>
+<script>
+    const linguagens = ["javascript", "java", "python", "c#"];
+    console.log('Valor: ${linguagens[0]}');
+    document.getElementById("exibirValorVetor").innerHTML += 'Valor: ${linguagens[0]}<br/>';
+    document.getElementById("exibirValorVetor").innerHTML += 'Valor: ${linguagens[1]}<br/>';
+    document.getElementById("exibirValorVetor").innerHTML += 'Valor: ${linguagens[2]}<br/>';
+    document.getElementById("exibirValorVetor").innerHTML += 'Valor: ${linguagens[3]}<br/>';
+    document.getElementById("exibirValorVetor").innerHTML += 'Valor: ${linguagens[4]}<br/>';
+    linguagens[4] = "php";
+    document.getElementById("exibirValorVetor").innerHTML += 'Valor: ${linguagens[4]}<br/>';
+    linguagens[9] = "linux";
+    linguagens[11] = ".net";
+    for(let i=0; linguagens.length; i++){
+        document.getElementById("exibirValorVetor").innerHTML += 'Valor : ${linguagens[i]}<br/>';
+
+    }
+
+
+    //for
+    const objDiv = document.getElementById('exibirValor');
+    for(let ind=0; ind<5; ind++){
+        console.log("Valor", ind);
+        objDiv.innerHTML = objDiv.innerHTML + "For: " + ind + '<br/>';
+    }
+
+    //while
+    let valor =0;
+    //objDiv.innerHTML = "";
+    while(valor<5){
+        console.log("Valor", valor);
+        objDiv.innerHTML = objDiv.innerHTML + "While: " + valor + '<br/>';
+        valor++;
+    }
+
+    valor=0;
+    do{
+        console.log("Valor", valor);
+        objDiv.innerHTML = objDiv.innerHTML + "Do....While: " + valor + '<br/>';
+        valor++;
+    }while(valor<5);
+</script>
+
+</html>

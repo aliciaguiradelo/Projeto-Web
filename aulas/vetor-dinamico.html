@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var linguagens = [];
+        function addColor(){
+            let txtCor = document.getElementById('idCor').value;
+            linguagens.push(txtcor);
+            console.log(linguagens);
+            //document.getElementById('idCor').value="";
+            txtCor.value="";v
+        }
+    </script>
+</head>
+<body>
+    <label for="idCor">COR: </label>
+    <input type="text" id="idCor" name="idCor" size="25 px"><br/>
+    <button id="btnAdicionarCor" onclick="addColor()">ADD COR</button>
+</body>
+</html>
