@@ -1,15 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 10;
+            background: #f5f5f5;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        form {
+            margin: auto;
+            width: 50%;
+        }
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #btnEnviar {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 12px;
+        }
+    </style>
+    <script>
+        function enviar() {
+            let nome = document.getElementById('idNome');
+            let sobrenome = document.getElementById('idSobrenome');
+            let cartao = document.getElementById('idCartao');
+            let aviso = document.getElementById('aviso');
+            let envio = false;
+
+            if (nome.value.length == 0) {
+                alert("O preenchimento do campo CPF é obrigatório!");
+                nome.focus();
+            } else if (sobrenome.value.length == 0) {
+                aviso.innerHTML = "O preenchimento do campo LOGIN é obrigatório!";
+                sobrenome.focus();
+            } else if (cartao.value.length == 0) {
+                aviso.innerHTML = "O preenchimento do campo SENHA é obrigatório!";
+                senha.focus();
+            } else if (senhaConf.value.length == 0) {
+                aviso.innerHTML = "O preenchimento do campo CONFIRMAÇÃO SENHA é obrigatório!";
+                cartao.focus();
+            } else {
+                aviso.innerHTML = "";
+                envio = true;
+            }
+
+            alert("Entrou: " + envio);
+
+            if(envio)
+                return true;
+            else   
+                return false;
+
+        }
+
+        function mascaraCartao(campoTexto) {
+            campoTexto.value = campoTexto.value.replace(/(\d{4})(\d{4})(\d{4})(\d{4})/g, "\$1.\$2.\$3\.\$4");
+        }
+
+        function retirarFormatacao(campoTexto) {
+            campoTexto.value = campoTexto.value.replace(/(\.|\/|\-)/g, "");
+        }
+    </script>
 </head>
+
 <body>
-    <form action="/cartao" method="post">
+
+    <form action="/cadastrar" onsubmit="return enviar();">
         <label for="idPlano">Plano:</label>
-        <select id="idPlano"></select>
+        <select id="idPlano" required>
+            <option value="b">Básica</option>
+            <option value="p">Profissional</option>
+            <option value="pl">Plus</option>
+        </select><br><br>
+        <label for="idNome">Nome:</label>
+        <input type="text" id="idNome" name="idNome" required><br><br>
+        <label for="idSobrenome">Sobrenome:</label>
+        <input type="text" id="idSobrenome" name="idSobrenome" required><br><br>
+        <label for="idCartao">Cartão de Crédito:</label>
+        <input type="text" id="idCartao" name="idCartao" 
+        onfocus="retirarFormatacao(this);" onblur="mascaraCartao(this);"    
+        required><br><br>
+
+        <button id="btnEnviar" type="submit">Enviar</button>
+
     </form>
+
 </body>
+
 </html>
