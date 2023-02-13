@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 2px solid lightgray;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: cornflowerblue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: royalblue;
+      }
+
+      .error {
+        color: red;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="contact-form">
+        <input type="text" placeholder="Name" id="name" required>
+        <input type="email" placeholder="Email" id="email" required>
+        <textarea placeholder="Message" id="message" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+      <div class="error" id="error-message"></div>
+    </div>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const errorMessage = document.getElementById("error-message");
+
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        let hasError = false;
+
+        if (!document.getElementById("name").value) {
+          errorMessage.innerHTML = "Name is required";
+          hasError = true;
+        } else if (!document.getElementById("email").value) {
+          errorMessage.innerHTML = "Email is required";
+          hasError = true;
+        } else if (!document.getElementById("message").value) {
+          errorMessage.innerHTML = "Message is required";
+          hasError = true;
+        }
+
+        if (!hasError) {
+          errorMessage.innerHTML = "";
+          form.submit();
+        }
+      });
+    </script>
+  </body>
+</html>

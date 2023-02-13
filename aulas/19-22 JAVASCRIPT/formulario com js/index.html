@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="get" class="form-control">
+        
+        <label for="idEmail">EMAIL</label></br>
+        <input type="email" id="idEmail" placeholder="usuario@dominio.com" required></br>
+        <label for="idNome">NOME</label></br>
+        <input type="text" id="idNome" placeholder="Usuario" required></br>
+        <label for="idTel">TELEFONE</label></br>
+        <input type="tel" id="idTel" placeholder="(xx) x xxxx-xxxx" required></br>
+        <label>Mensagem</label>
+        <textarea placeholder="Digite sua mensagem" rows=5 cols=45 required></textarea>
+        <input id="idBtn" type="submit" onclick="enviar()" value="Enviar">
+
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body> 
+</html>
