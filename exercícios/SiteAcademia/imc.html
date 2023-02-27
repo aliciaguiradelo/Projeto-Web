@@ -25,19 +25,16 @@
                     <h3>Quer descobrir seu IMC?</h3>
                     <p>Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. </p>
                 </header>
-                <form  >
+                <form >
                     <label for="idPeso">Peso(kg)</label>
                     <input type="text" id="idPeso" placeholder="ex: 65" required><br>
                     <label for="idAltura">Altura(m)</label>
                     <input type="text" id="idAltura" placeholder="ex: 1.59" required><br>
-                    <input type="submit" id="idSubmit" value="CALCULAR">
+                    <button type="button" onclick="CalcularImc()" id="idSubmit">Calcular</button>
                 </form>
             </article>
         </section>
-        <section id="idResult">
-            <h1>Seu IMC:</h1>
-            <h2>Classificação:</h2>
-        </section>
+        <textarea id="idResult" name="idResult"></textarea>
         <section>
             <table>
                 <thead>
@@ -78,4 +75,5 @@
         </section>
     </div>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

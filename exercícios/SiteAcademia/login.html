@@ -11,21 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div>
         <h1 id="idLogo">She-fits</h1>
-        <form method="get" action="" class="banner">
+        <form method="get" action="imc.html" class="banner">
             <header>
                 <h3>Login</h3>
                 <h6>insira seus dados abaixo para continuar</h6>
             </header>
             <label for="idUsuario">Usuario</label><br>
-            <input type="text" id="idUsuario" placeholder="nome_usuário" required onfocus="Foco()"><br>
+            <input type="text" id="idUsuario" placeholder="nome_usuário" required><br>
             <label for="idSenha">Senha</label><br>
-            <input type="password" id="idSenha" onfocus="Foco()" placeholder="****" required><br>
-            <input type="submit" value="Entrar" class="btn">
+            <input type="password" id="idSenha" placeholder="****" required><br>
+            <input type="submit" onclick="Logar()" value="Entrar" class="btn">
             <h6>ainda não tem conta? <a>Clique aqui!</a></h6>
         </form>
     </div>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>
