@@ -2,10 +2,14 @@
 import React from 'react'
 
 export default function cabecalho(){
-    <div>
-        <header>
-            <h1>Olá</h1>
-            <p>Bem vindos ao mais novo website da nossa empresa.</p>
-        </header>
-    </div>
+    return(
+        <div>
+            <header className='headerC'>
+                <h1>{pros.tituloCab}</h1>
+                <p>Bem vindos ao mais novo website da nossa empresa.</p>
+            </header>
+        </div>
+
+    );
+    
 }

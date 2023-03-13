@@ -1,14 +1,19 @@
 import './App.css';
 
-import Lista from './componente/ListaAlunos'
+import Cabecalho from './componente/cabecalho'
+import Carros from './componente/carros';
 
 function App() {
+
+  const tituloCab = "Loja de veículos"
+  const parag = "Seja bem vindo a loja"
+  let Carros = ['BMW', 'Volksvagem', 'Volvo', 'Mercedes', 'Tesla']
+
   return (
     <div className="App">
-      <header className="App-header">
-        
-        
-      </header>
+      <Cabecalho tituloCabv= {tituloCab}/>
+      <Cabecalho parag = {parag}/>
+      <Carros carros = {Carros}/>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import carro from './carro.png';
 
 export default function carros(props){
     return (
-        <div>
+        <div className='main'>
             <img src={carro} className="App-carro" alt="carro" />
             <ul>
                 <li>{props.carros[0]}</li>
