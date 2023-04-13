@@ -37,6 +37,12 @@ footer{
     height: 600px;
     background-color: burlywood;
  }
+ #userEmail{
+   background-color: aquamarine;
+ }
+ span{
+   color: rgb(116, 15, 218);
+ }
 
 /* Componente Empresa*/
  .empresa{
