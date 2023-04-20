@@ -5,6 +5,7 @@ import Contato from './Componentes/Contato'
 import Nav from './Componentes/Nav'
 import Footer from './Componentes/Footer'
 import Atividade1 from './Componentes/Atividade1'
+import Api from './Componentes/Api'
 
 function App() {   
 return (
@@ -15,6 +16,7 @@ return (
           <Route path="/Empresa" element={<Empresa/>}/>
           <Route path="/Contato" element={<Contato/>}/>
           <Route path="/Atividade1" element={<Atividade1/>}/>
+          <Route path="/Api" element={<Api/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>

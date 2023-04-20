@@ -19,6 +19,9 @@ function Nav(){
                 <li>
                     <Link to="/Atividade1">Atividade1</Link>
                 </li>
+                <li>
+                    <Link to="/Api">Api</Link>
+                </li>
             </ul>
         </div>
     );

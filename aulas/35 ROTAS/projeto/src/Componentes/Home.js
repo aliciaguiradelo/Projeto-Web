@@ -8,8 +8,8 @@ function Home(){
     const [userEmail, setUserEmail] = useState()
 
     //criando uma função para enviar email
-    function enviarEmail() {
-        //e.preventDefault()
+    function enviarEmail(e) {
+        e.preventDefault()
         setUserEmail(email)
         console.log(userEmail)
     }
@@ -26,7 +26,8 @@ function Home(){
             <p className="nome">NOME: {nome} </p><br/>
             <button onClick={()=>setNome('usuario')}> MUDAR NOME </button><br/><br/>
             <h2>CADASTRE SEU EMAIL</h2><br/>
-            <input type="email" placeholder='Digite seu email' onChange={(e)=>setEmail(e.target.value)}></input><br/><br/>
+            <input type="email" placeholder="Digite seu email" onChange={(e)=>setEmail(e.target.value)}/><br/><br/>
+            
             <button type="submit" onClick={enviarEmail}>ENVIAR</button><br/><br/>
             {/*{email}*/}
             {/*condição para verificar se o campo email está preenchido*/}
