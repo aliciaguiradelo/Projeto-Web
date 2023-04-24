@@ -1,0 +1,11 @@
+form{
+    background-image: linear-gradient(to right, aqua, white);
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+label{
+    display: flex;
+
+}

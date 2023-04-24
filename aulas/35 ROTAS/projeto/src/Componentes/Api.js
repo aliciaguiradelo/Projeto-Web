@@ -1,5 +1,6 @@
 import React from "react"
 import {useForm} from 'react-hook-form'
+import '../Componentes/css/api.css'
 
 function Api(){
 
@@ -9,7 +10,8 @@ function Api(){
         console.log(e);
     }
 
-    // funcão checkCep
+    // funcão checkCep (promisse)
+
     const checkCep =(e)=>{
     const cep =e.target.value.replace(/\D/g,'');
     //passa o cep que foi digitado esperando um json de resposta
@@ -53,7 +55,7 @@ function Api(){
 
             <label> ESTADO: 
                 <input type="text"{...register("estado")}/>
-            </label>
+            </label><br/>
 
             <button type="submit" id="enviar">Enviar</button>
 

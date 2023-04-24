@@ -22,6 +22,9 @@ function Nav(){
                 <li>
                     <Link to="/Api">Api</Link>
                 </li>
+                <li>
+                    <Link to="/Api2">Api 2</Link>
+                </li>
             </ul>
         </div>
     );

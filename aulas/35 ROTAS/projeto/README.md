@@ -22,3 +22,17 @@ Aula-17/04/2023
 * handleSubmit
 * fetch caminho da Api
 * criando uma api
+
+20/04/2023
+* estilizando componente Api
+* https://jsonplaceholder.typicode.com/guide/
+* instalando o axios npm install axios
+* importanto e utilizando axios
+* criando função assincrona( async) 
+* chamando a api com await
+* usando o effect para retornar uma função
+* usando o map para percorrer e trazer cada item da api no array
+* usando condiconal ternária(if ?  e else :)
+
+24/04/2023
+* 
